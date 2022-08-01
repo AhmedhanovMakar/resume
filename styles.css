@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');/*ссилка на тип шрифту*/
+
+body {/*до всього*/
+  background-color: #d9d4eb;/*загальний фон*/
+  color: #103683;/*загальний колір*/
+
+  font-size: 15px;/*розмір шрифту*/
+  font-weight: normal;/*жирність шрифту*/
+  font-family: 'Roboto', sans-serif;/*тип шрифту*/
+  /* font-family:Arial, Helvetica, sans-serif ; */
+}
+
+.info h1{
+  text-shadow: 20px -20px 3px rgb(182, 159, 159);
+}
+
+a {/*до всіх ссилок*/
+  color: #000;/*колір відображення*/
+  text-decoration: none;/*можна щось додати*/
+}
+
+a:active {/*додати поведінку ссилці а*/
+  color: blue;/*при клікє - змінює колір*/
+}
+
+a:hover {/*додати поведінку ссилці а*/
+  text-decoration:underline;/*при наведенні - підкреслює */
+}
+
+.avatar {/*до класу avatar (фото)*/
+  width: 200px;/*ширина*/
+  border-radius: 30px;/*заокруглення кутів*/
+  box-shadow: 4px 6px 14px rgb(139, 28, 28);/*додати тінь*/
+}
+
+.info {/*до всього класу info*/
+  display: flex;/*розташувати вміст в рядок*/
+  margin: 0px;/*зовнішні відступи*/
+  border-left: 10px solid rgb(151, 165, 209);
+  border-right: 10px solid rgb(151, 165, 209);
+  border-radius: 10px;/*заокруглення кутів*/
+}
+
+@media (max-width: 700px) {/*для ширини екрану до 700рх*/
+  .info {/*змінити для класу info*/
+    text-align: center;/*розташувати текст посередині*/
+    display: block;/*поведінку вмісту з flex на block*/
+  }
+}
+
+.info-text {/*до info-text*/
+  margin-left: 40px;/*зовнішній відступ зліва*/
+}
+
+.info-text h4 {/*до h4 в info-text*/
+  margin-bottom: 5px;/*відступ униз*/
+}
+
+.info p {/*до кожного з параграфів у класі info*/
+  color: rgb(68, 59, 59);/*колір тексту*/
+  margin: 0;/*зовнішні відступи*/
+  font-size: 13px;/*розмір шрифту*/
+  font-style: italic;/*стиль тексту з урахуванням font-family*/
+  text-decoration: underline;/*підкреслення знизу*/
+  text-transform: capitalize;/*усі слова починаються з 
+  великої літери*/
+  letter-spacing: 2px;/*відстань між літерами*/
+  word-spacing: 5px;/*відстань між словами*/
+}
+
+.container {/*до всього класу container*/
+  max-width: 700px;/*максимальна ширина*/
+  margin: auto;/*по центру*/
+  padding-top: 10px;/*відступ зверху*/
+}
+
+/* .social {
+  background: red;
+  padding: 10px 15px;
+  border: 7px solid black;
+  margin: 5px;
+
+  border-radius: 15px;
+  border-bottom-style: double;
+  border-top-width: 12px;
+  border-right-width: 14px;
+  border-left-style: double;
+} */
+
+.box-model > div {/*
+  до усіх div першої вкладеності у класі box-model
+  */
+  color: rgb(218, 199, 199);
+  text-align:center;
+  float: left;/*розташування блоків зліва на право*/
+  background: #000;/*колір фону*/
+  height: 25px;/*висота блоку*/
+  width: 25%;/*ширина блоків*/
+  border: 4px solid red;/*
+  параметри рубіжів кожного блоку: товщина, стиль, колір
+  */
+  box-sizing: border-box;/*в межах загальної ширини*/
+}
+
+.bg-yellow {/*задати кольоровий стиль*/
+  background: #fff9dc;/*для заднього плану*/
+}
+
+.bg-green {/*задати кольоровий стиль*/
+  background: #e5ffe7;/*для заднього плану*/
+}
+
+.bg-red {/*задати кольоровий стиль*/
+  background: #ffe5e5;/*для заднього плану*/
+}
+
+.card {/*до всього класу card*/
+  padding: 15px 20px;/*відступи верх-низ та право-ліво */
+  margin-bottom: 20px;/*зовнішні відступи знизу*/
+  border-radius: 20px;/*заокруглити кути радіусом 20рх*/
+}
+
+.card h2 {/*до заголовку h2 класу card*/
+  margin-bottom: 10px;/*зовнішні відступи знизу*/
+}
+
+.card h3 { /*до заголовку h3 класу card */
+  margin-bottom: 20px;/*зовнішні відступи знизу*/
+}
+
+.list { /*до усього списку*/
+  padding: 0 35px;/*відступи: 0-верх_низ, 35рх-право_ліво*/
+  list-style:upper-roman ;/*стиль нумерації рядків*/
+}
+
+.list li { /*до кожного рядку*/
+  color: rgb(136, 36, 36);/*змінити колір*/
+  margin: 5px;/*відступи від країв*/
+  border-bottom: 1px dashed deepskyblue;/*
+  нижній рубіж: 1-ширина, dashed-стиль(пунктир), колір
+  */
+}
+
+.table { /*звернутися до таблиці*/
+  width: 100%; /*розтягти її на усю ширину*/
+}
+
+.table td {  /*звернутися до кожної строки таблиці*/
+  padding-bottom: 2%; /*зробити отступы униз*/
+}
+
+.table td:nth-child(1) {/*до першого td у кожному tr*/
+  color: olive;/*змінити колір на олівковий*/
+}
+.table td:nth-child(2), 
+.table td:nth-child(3) {/*якщо потрібно декілька td*/
+  color: red;/*змінити колір на червоний*/
+}
+
+.table tr:nth-child(even) {/*змінити колір строки.
+  even-парне, odd-непарне*/
+  background:rgb(63, 36, 36)/*колір фону*/
+}
+
+.link-list {/*до усього у класі link-list*/
+  list-style: circle;/*змінити вигляд крапки*/
+  padding: 0;/*прибрати внутрішні відступи*/
+}
+
+.link-list li {/*до кожного li у link-list*/
+  margin-bottom: 10px;/*зробити відступ униз*/
+  border-bottom: 1px solid #ccc;/*намалювати нижній рубіж*/
+  padding-bottom: 2px;/*зробити відступ до нижнього рубіжу*/
+}
+
+.contact h3 {/*до h3 у класі contact*/
+  text-align: center;/*розташувати текст по центру*/
+  text-shadow: -20px -20px 3px rgb(182, 159, 159);/*додати тінь*/
+  text-decoration:overline;/*підкреслити тінь зверху*/
+  text-decoration-color: rgb(43, 155, 136) ;/*колір лінії*/
+}
+
+.form-group label {/*до усіх label у класі form-group*/
+  display: block;/*змінити поведінку label зі строчної(
+    за замовчанням) на блочну*/
+  font-size: 12px;/*розмір шрифту*/  
+  color: #86898f;/*колір шрифту*/
+  padding: 2px 0;/*відступи зверху-знизу: 3, праворуч-лфворуч: 0*/
+}
+
+.form-group input,
+.form-group textarea {/*до усіх input у класі form-group*/
+  width: 100%;/*по всій ширині*/
+  box-sizing: border-box;/*в межах загальних рубежів*/
+  border: none;/*прибрати лінію по контуру поля ввода*/
+  background: transparent;/*(прозорий фон)*/
+  border-bottom: 1px solid #ccc;/*пофарбувати нижню межу */
+  color: rgb(49, 58, 51);/*встановити колір курсора*/
+  padding: 15px 20px 10px;/*встановити відступи*/
+  outline: none;/*прибрати виділення поля вводу*/
+  font-family: inherit;/*тип шрифту взяти основний*/
+}
+
+.row {/*до row*/
+  display:flex;/*розташувати вміст в рядок*/
+  margin-bottom: 20px;/*зовнішній відступ униз*/
+}
+
+.row > .form-group {/*до кожного form-group з row */
+  width: 50%;/*кожен form-group займає 50% рядка*/
+  margin-right: 20px;/*зовніщній відступ зправа*/
+}
+
+.row > .form-group:last-child {/*для останнього елементу у form-group */
+  margin-right: 0;/*прибрати відступ зправа*/
+}
+
+.btn {/*до btn*/
+  background: rgb(30, 34, 29);/*змінити фон*/
+  color:rgb(237, 241, 229);/*колір тексту*/
+  padding: 5px 25px;/*внутрішні відступи*/
+  margin-bottom: 20px;/*зовнішній відступ униз*/
+  border: none;/*прибрати контур*/
+  font-family: inherit;/*тип тексту*/
+  cursor: pointer;/*зміна курсору при наведенні*/
+}
+
+.btn:hover {/*реакція на наведення курсору*/
+  opacity: 0.9;/*підсвічує кнопку*/
+}
+
+/* .position {
+  position: relative;
+  margin-top: 50px;
+  border: 3px solid #000;
+  padding: 20px;
+  height: 200px;
+}
+
+.box {
+  position:fixed;
+  bottom: 50px;
+  right: 20px;
+  border-radius:50%;
+  width: 50px;
+  height: 50px;
+  background:lightcoral;
+} */
